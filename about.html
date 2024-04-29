@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About this project</title>
+</head>
+<style>
+    *{
+        scroll-behavior: smooth;
+    }
+    ::selection{
+        color: white;
+        background-color: rgb(44, 44, 44);
+    }
+</style>
+<body>
+    <div class="container-sm  flex flex-col space-y-4" style="width: 70vw; position: absolute; left:0; transform:translate(20%);background-color: white; margin-top: 10vh; padding: 3vh; flex-direction: column; padding-left: 5vw; padding-right: 5vw; gap: 2vh; padding-bottom: 20vh; ">
+        <h1 class="text-center text-2xl 2xl:text-5xl font-semibold">About this project</h1>
+        <p class="text-left text-pretty">
+            Art itself is already an architecture of care.
+            </p>
+        <p class="text-left text-pretty">Art itself can be inclusive to everyone regardless their cultures, language, background, or individual experience.</p>
+        <img src="img/about/1.png" alt="cursor variation" style="max-width: 80%; align-self: center;">
+        <p style="text-align: center; color: grey;">Initial outline in Figma</p>
+
+        
+        <p class="text-left text-pretty">&emsp;Then the question moves to: What is the form of the map?</p>
+        <p class="text-left text-pretty">&emsp;This brings up the egg-and-chicken philosophy: does location form based on landscape and roads, or does road appear naturally between locations? </p>
+        <p class="text-left text-pretty">&emsp;Relating to the idea that map forms based on an adventure in time, I decided to make the map of my home vertically, defining “road” as <span class="high">“axis”</span>. Instead of road spreading through location, location is relative to road. Due to my childhood tension on education, I spent most of my life inside the home that formed the boundary of a map.</p>
+
+        <img src="img/about/0.png" alt="cursor variation" style="max-width: 80%; align-self: center;">
+        <p style="text-align: center; color: grey;">Initial sketch for the home map</p>
+
+        <p class="text-left text-pretty">&emsp;The rooms of the home may appear on the map multiple times but in various versions in response to time/journey. To fully depict my journey on a map and respond to its geographic information, I made a functional website to present various layers of home, listed below:
+        </p>
+        <img src="img/about/2.png" alt="cursor variation" style="max-width: 80%; align-self: center;">
+        <p style="text-align: center; color: grey;">Layers I drew (portion)</p>
+        
+        <p class="text-left text-pretty">&emsp;I spent my class time mostly collecting inspiration and sketching my ideas for the project. Since this project is more about philosophy, I kept changing my definition of both “home” and “map”. This also shifts my ideas from catalog to stacked cards and then website, increasing its <span class="high">interactivity.</span></p>
+        
+        <img src="img/about/3.png" alt="cursor variation" style="max-width: 80%; align-self: center;">
+        <p style="text-align: center; color: grey;">The "Me" related to each layer fo the space</p>
+        <p class="text-left text-pretty"> &emsp;The website boosts the map’s<span class="high">availability and openness</span> to all users, people are free to combine any layers they want to see the visual combination. This is also scrollable and people can pause at any point for a deeper look. This project is also inspired by our previous talk on reenactment, cycle, and agent for layer. The map is the agent here to represent the narration.</p>
+        
+        <h1 class="text-left text-2xl 2xl:text-5xl font-semibold">Process of making</h1>
+        <p class="text-left text-pretty">Time spent: <br>one week(inspiration, researching) + one night... (writing coding and drawing layers, cursors)</p>
+        <p class="text-left text-pretty">Languages / softwares I used:</p>
+        <ol class="list-disc list-inside- pl-5">
+            <li>HTML: completely build from scratch</li>
+            <li>CSS: tailwindcss, bootstrap</li>
+            <li>Javascript: animation and interaction</li>
+            <li>Clip Studio Paint: drawing</li>
+            <li>Github + Netlify + Visual Studio Code: website hoster</li>
+            <li>Flaticon for icon, Pixabay for sound effect, copyright free</li>
+        </ol>
+        <footer class="container-fluid" style="height: 50vh; width: 70%; align-self: center; position: relative; bottom: 0; padding-top: 10vh;">
+            <h1 class="text-center text-2xl 2xl:text-5xl font-semibold" > <a href="index.html" class="hover:text-red-500 hover:underline hover:decoration-dotted">Back to homepage</a></h1>
+        </footer>
+    </div>
+    
+    <canvas id="canvas1" style="
+                position:fixed;
+                top: 0; left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+            " class="bg-gray-100">
+            </canvas>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js"></script>
+</html>

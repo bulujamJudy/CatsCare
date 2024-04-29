@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a Place for You</title>
+    <link rel="icon" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    
+    #timer{
+        top:0;
+        left:0;
+        transform: translate(50%,100%);
+        position: absolute; 
+        width: 50vw;
+        z-index:1;
+    }
+    .img{
+        left:0;
+        bottom: 0; 
+        transform: translate(-15%,-20%);
+        position: absolute; 
+        width: 100vw; 
+        pointer-events: none;
+    }
+    .time{
+        font-size:10vw; text-align: center; width: 100%;
+    }
+    @media (min-width: 726px) { 
+        .img{
+            right:0;
+            bottom: 0; 
+            bottom:0;
+            position: absolute; 
+            width: 100vw; 
+            transform: translate(0%,0%);
+        }
+        #timer{
+            top:0;
+            left:0;
+            transform: translate(25%,200%);
+            position: absolute; 
+            width: 30vw;
+        }
+        .time{
+            font-size:5vw; text-align: center; width: 100%;
+        }
+    }
+</style>
+<body class="container-fluid row h-100 overflow-hidden text-center row justify-content-md-center" style="margin: 0;padding: 0; position: absolute; top:0; height: 100vh; cursor: url(/img/cursor.png),auto;">
+    <div id="timer" class="absolute col col-lg-2">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-item"  style="font-size: 2vw;" href="#">Cats Care</a>
+                <a class="navbar-item" style="font-size: 2vw;" href="about.html" target="_blank">About</a>
+            </div>
+        </nav>
+        <h1 class="time">25 : 00</h1>
+        <div>
+            <button type="button" class="btn" >
+                <img src="img/icon/play.png" class="pause">
+            </button>
+            <button type="button" class="btn refresh" onclick="resetTimer()">
+                <img src="img/icon/refresh.png" alt="refresh">
+            </button>
+        </div>
+    </div>
+    <div id="image" class="col col-lg-2">
+        <img src="img/0.png" alt="person" class="img" id="0" style="opacity: 1;">
+        <img src="img/1.png" alt="person" class="img cat" id="1" style="opacity: 0;">
+        <img src="img/2.png" alt="person" class="img cat" id="2" style="opacity: 0;">
+        <img src="img/3.png" alt="person" class="img cat" id="3" style="opacity: 0;">
+        <img src="img/4.png" alt="person" class="img cat" id="4" style="opacity: 0;">
+        <img src="img/5.png" alt="person" class="img cat" id="5" style="opacity: 0;">
+        <img src="img/6.png" alt="person" class="img cat" id="6" style="opacity: 0;">
+        <img src="img/7.png" alt="person" class="img cat" id="7" style="opacity: 0;">
+        <img src="img/8.png" alt="person" class="img cat" id="8" style="opacity: 0;">
+        <img src="img/9.png" alt="person" class="img cat" id="9" style="opacity: 0;">
+    </div>
+    
+    <footer style="bottom: 0; position: absolute; transform: translate(0,-100%);">
+        <p class="text-base">Made by <a href="https://github.com/bulujamJudy" class="hover:bg-black hover:text-white ease-in-out duration-300" target="_blank">Judy Luo</a> in 2024</p>
+    </footer>
+    <audio controls id="meow" style="visibility:hidden">
+        <source src="/meow.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js"></script>
+</html>
