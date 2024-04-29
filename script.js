@@ -44,11 +44,11 @@ function startTimer() {
                 number++;
             }
             if (rest === false){
-                min = 1;
+                min = 25;
                 sec = 00;
             }else{
-                min = 0;
-                sec = 30;
+                min = 5;
+                sec = 0;
             }
             displayCats();
             rest = !rest;
@@ -82,11 +82,11 @@ function resumeTimer() {
 
 function resetTimer() {
     if (rest === false){
-        min = 1;
+        min = 25;
         sec = 0;
     }else{
-        min = 0;
-        sec = 30;
+        min = 5;
+        sec = 0;
     }
     clearInterval(interval);
     totalsec = min * 60 + sec;
